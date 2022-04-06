@@ -1,4 +1,4 @@
-const appVersion = "1.0.3";
+const appVersion = "1.0.2";
 const styleLog = {
   base: [
     "color: #fff",
@@ -106,7 +106,6 @@ self.addEventListener("activate", evt => {
     })
   )
 });
-/*
 self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request).then(function(response) {
@@ -114,5 +113,3 @@ self.addEventListener('fetch', function(e) {
     })
   );
 });
-*/
-self.addEventListener("fetch", function (event) {});

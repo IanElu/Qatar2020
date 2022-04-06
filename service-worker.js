@@ -15,7 +15,8 @@ const styleLog = {
   ]
 };
 let cacheName = () => `Q2022-${appVersion}`;
-let precacheFilesManifest = [                                                              
+let precacheFilesManifest = [
+                             { url: "css/reset.css"},
                              { url: "css/styles.css"},
                              { url: "css/flag-icons.css"},
                              { url: "images/android-icon-144x144.png"},
@@ -40,7 +41,6 @@ let precacheFilesManifest = [
                              { url: "images/favicon-96x96.png"},
                              { url: "images/grupos.jpg"},
                              { url: "images/img_avatar.png"},
-                             { url: "images/logo.jpg"},
                              { url: "images/ms-icon-144x144.png"},
                              { url: "images/ms-icon-150x150.png"},
                              { url: "images/ms-icon-310x310.png"},
@@ -77,6 +77,7 @@ let precacheFilesManifest = [
                              { url: "images/flags/4x3/kr.svg"},                             
                              { url: "js/vue.js"},
                              { url: "js/app.js"},
+                             { url: "favicon.ico"},
                              { url: "index.html"},
                              { url: "manifest.json"}
                             ];
@@ -106,10 +107,4 @@ self.addEventListener("activate", evt => {
     })
   )
 });
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
-  );
-});
+self.addEventListener("fetch", function (event) {});

@@ -5,8 +5,8 @@
     "background_color": "#6C2442",
     "display": "standalone",
     "orientation": "portrait",   
-    "scope": "https://ianelu.github.io/Qatar2022",
-    "start_url": "https://ianelu.github.io/Qatar2022",
+    "scope": "https://ianelu.github.io/Qatar2022/",
+    "start_url": "https://ianelu.github.io/Qatar2022/",
     "icons": [
         {
          "src": "images/android-icon-36x36.png",

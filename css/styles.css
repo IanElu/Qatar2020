@@ -1,7 +1,7 @@
 body 
 {
   font-family: 'Exo', sans-serif;
-  background-color: #6C2442;
+  background-color: #C01541;
   color: white;
 }
 
@@ -23,8 +23,7 @@ body
   width: 100%;
 } 
 
-input[type='text'] {
-    border-radius: 0.5rem;
+input[type='text'] {    
     text-transform: uppercase;
     font-size: 20px;
     width: 50%;
@@ -36,18 +35,18 @@ input[type='text'] {
 .css-button {
 	font-family: Exo;
 	color: #FFFFFF;
-	font-size: 15px;
-	border-radius: 5px;
-	border: 1px #3381ed solid;
-	background: linear-gradient(180deg, #3d93f6 5%, #1e62d0 100%);
-	text-shadow: 1px 1px 1px #1571cd;
-	box-shadow: inset 1px 1px 2px 0px #97c4fe;
+	font-size: 18px;
+	border-radius: 3px;
+	border: 1px #7F0A2C solid;
+	background: linear-gradient(180deg, #7F0A2C 5%, #7F0A2C 100%);
+	text-shadow: 1px 1px 1px #7F0A2C;
+	box-shadow: inset 1px 1px 2px 0px #7F0A2C;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
 }
 .css-button:hover {
-	background: linear-gradient(180deg, #1e62d0 5%, #3d93f6 100%);
+	background: linear-gradient(180deg, #7F0A2C 5%, #7F0A2C 100%);
 }
 .css-button-icon {
 	padding: 5px 5px;
@@ -103,6 +102,12 @@ select
   margin: 5px;
   width: 50px;
   height: 50px;
+}
+
+li 
+{
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 450px) {

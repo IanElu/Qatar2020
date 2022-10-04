@@ -156,9 +156,9 @@ var app = new Vue({
             flag: "images/flags/4x3/us.svg"
         },{
             id:8,
-            country: "REPECHAJE EUROPEO",
+            country: "GALES",
             group: "B",
-            flag: "images/flags/4x3/xx.svg"
+            flag: "images/flags/4x3/gb-wls.svg"
         },{
             id:9,
             country: "ARGENTINA",
@@ -186,9 +186,9 @@ var app = new Vue({
             flag: "images/flags/4x3/fr.svg"
         },{
             id:14,
-            country: "REPECHAJE INTERC 1",
+            country: "AUSTRALIA",
             group: "D",
-            flag: "images/flags/4x3/xx.svg"
+            flag: "images/flags/4x3/au.svg"
         },{
             id:15,
             country: "DINAMARCA",
@@ -206,9 +206,9 @@ var app = new Vue({
             flag: "images/flags/4x3/es.svg"
         },{
             id:18,
-            country: "REPECHAJE INTERC 2",
+            country: "COSTA RICA",
             group: "E",
-            flag: "images/flags/4x3/xx.svg"
+            flag: "images/flags/4x3/cr.svg"
         },{
             id:19,
             country: "ALEMANIA",

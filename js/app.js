@@ -73,8 +73,9 @@ var app = new Vue({
             return Math.floor(Math.random() * length);
         },        
         fnLottery(){   
+            debugger;
             this.fnResetTeamNums();          
-            let teams4Participant = Math.floor(this.teamNums.length/this.listGamblers.length);
+            let teams4Participant = Math.floor(this.teamNums.length/this.numGamblers);
             for(let index in this.listGamblers) {                                                                
                 let objGambler = this.listGamblers[index];
                 objGambler.data = [];

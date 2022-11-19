@@ -58,8 +58,8 @@ var app = new Vue({
                     this.showRight = true;
                     let arrElems = this.listGamblers.filter((item) => { return item.name.toLowerCase() == this.gamblerName.toLowerCase() });             
                     if(arrElems.length == 0){
-                        this.listGamblers.push({ name: this.gamblerName.toLowerCase(), data: []});                                            
-                        this.listGamblersBack.push({ name: this.gamblerName.toLowerCase(), data: []});  
+                        this.listGamblers.push({ name: this.gamblerName.toLowerCase(), data: []});                                                                    
+                        this.gamblerName = "";
                     }    
                     else 
                     {

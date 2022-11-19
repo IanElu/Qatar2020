@@ -52,7 +52,6 @@ var app = new Vue({
             this.listGamblers = [];
         }, 
         fnAddGambler(){            
-
             if(this.gamblerName){                            
                 if(this.listGamblers.length < this.numGamblers)
                 {     
@@ -60,6 +59,7 @@ var app = new Vue({
                     let arrElems = this.listGamblers.filter((item) => { return item.name.toLowerCase() == this.gamblerName.toLowerCase() });             
                     if(arrElems.length == 0){
                         this.listGamblers.push({ name: this.gamblerName.toLowerCase(), data: []});                                            
+                        this.listGamblersBack.push({ name: this.gamblerName.toLowerCase(), data: []});  
                     }    
                     else 
                     {
@@ -72,10 +72,10 @@ var app = new Vue({
         fnRandom: function(length){
             return Math.floor(Math.random() * length);
         },        
-        fnLottery(){   
-            debugger;
+        fnLottery(){                          
             this.fnResetTeamNums();          
             let teams4Participant = Math.floor(this.teamNums.length/this.numGamblers);
+            this.listGamblers = this.listGamblers.filter(function(obj){ return obj.name.toLowerCase() != "none" }) ;
             for(let index in this.listGamblers) {                                                                
                 let objGambler = this.listGamblers[index];
                 objGambler.data = [];
@@ -117,7 +117,7 @@ var app = new Vue({
     data: { 
         gamblerName: "",        
         teamNums: [],        
-        listGamblers: [],
+        listGamblers: [],        
         numGamblers:2,  
         showRight: false,    
         teams: [{

@@ -72,7 +72,8 @@ var app = new Vue({
         fnRandom: function(length){
             return Math.floor(Math.random() * length);
         },        
-        fnLottery(){                          
+        fnLottery(){       
+            this.showLoading = true;                   
             this.fnResetTeamNums();          
             let teams4Participant = Math.floor(this.teamNums.length/this.numGamblers);
             this.listGamblers = this.listGamblers.filter(function(obj){ return obj.name.toLowerCase() != "none" }) ;
@@ -94,7 +95,11 @@ var app = new Vue({
                     objNone.data.push(this.teams.filter((item)=>{ return item.id == this.teamNums[k]; })[0]);
                 }  
                 this.listGamblers.push(objNone);
-            }                                
+            }   
+            let objThis = this;
+            setTimeout(function(){
+                objThis.showLoading = false;
+            }, 1000);
         },
         fnFecth: function(url, fncb){
             fetch(url)
@@ -112,13 +117,14 @@ var app = new Vue({
         },
         showCreate(){
             return this.listGamblers.length >= this.numGamblers;
-        },
+        },        
     },
     data: { 
         gamblerName: "",        
         teamNums: [],        
         listGamblers: [],        
         numGamblers:2,  
+        showLoading: false,
         showRight: false,    
         teams: [{
             id:1,

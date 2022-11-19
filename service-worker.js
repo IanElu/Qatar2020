@@ -1,4 +1,4 @@
-const appVersion = "1.0.5";
+const appVersion = "2.0";
 const styleLog = {
   base: [
     "color: #fff",
@@ -113,17 +113,17 @@ self.addEventListener('fetch', (event) => {
     try {
         const cachedResponse = await cache.match(event.request);
         if(cachedResponse) {
-            console.log('cachedResponse: ', event.request.url);
+            console.log('Qatar2022 - cachedResponse: ', event.request.url);
             return cachedResponse;
         }
         const fetchResponse = await fetch(event.request);
         if(fetchResponse) {
-            console.log('fetchResponse: ', event.request.url);
+            console.log('Qatar2022 - fetchResponse: ', event.request.url);
             await cache.put(event.request, fetchResponse.clone());
             return fetchResponse;
         }
     }   catch (error) {
-        console.log('Fetch failed: ', error);
+        console.log('Qatar2022 - Fetch failed: ', error);
         const cachedResponse = await cache.match('/en/offline.html');
         return cachedResponse;
     }

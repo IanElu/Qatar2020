@@ -109,15 +109,6 @@ var app = new Vue({
             setTimeout(function(){
                 objThis.showLoading = false;
             }, 1000);
-        },
-        fnFecth: function(url, fncb){
-            fetch(url)
-            .then(response => response.json())
-            .then(data =>{                        
-                if(fncb){
-                    fncb(data);
-                }
-            });
         }
     },
     computed: {
@@ -314,7 +305,7 @@ var app = new Vue({
             country: "GHANA",
             group: "H",
             flag: "images/flags/4x3/gh.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:31,
             country: "URUGUAY",
@@ -326,7 +317,7 @@ var app = new Vue({
             country: "COREA DEL SUR",
             group: "H",
             flag: "images/flags/4x3/kr.svg",
-            eliminate: true
+            eliminate: false
         }]
     }
 }); 

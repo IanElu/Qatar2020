@@ -35,7 +35,7 @@
                     <div># APOSTADORES</div>
                     <div>
                         <select v-model="numGamblers" @change="fnResetSelect">
-                            <option v-for="i in 32" :value="i">{{i}}</option>
+                            <option v-for="i in 16" :value="i">{{i}}</option>
                         </select>
                         <input type="text" v-model="gamblerName" placeholder="Nombre o Alias" maxlength="25" v-show="showAdd" />
                         <a class="css-button" v-show="showAdd">

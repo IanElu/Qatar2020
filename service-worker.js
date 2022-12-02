@@ -1,4 +1,4 @@
-const appVersion = "2.0";
+const appVersion = "3.0";
 const styleLog = {
   base: [
     "color: #fff",

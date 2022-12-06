@@ -287,7 +287,7 @@ var app = new Vue({
             country: "SUIZA",
             group: "G",
             flag: "images/flags/4x3/ch.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:28,
             country: "CAMERUN",

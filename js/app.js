@@ -143,7 +143,7 @@ var app = new Vue({
             country: "SENEGAL",
             group: "A",
             flag: "images/flags/4x3/sn.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:4,
             country: "PAISES BAJOS",
@@ -167,7 +167,7 @@ var app = new Vue({
             country: "EEUU",
             group: "B",
             flag: "images/flags/4x3/us.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:8,
             country: "GALES",
@@ -197,7 +197,7 @@ var app = new Vue({
             country: "POLONIA",
             group: "C",
             flag: "images/flags/4x3/pl.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:13,
             country: "FRANCIA",
@@ -209,7 +209,7 @@ var app = new Vue({
             country: "AUSTRALIA",
             group: "D",
             flag: "images/flags/4x3/au.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:15,
             country: "DINAMARCA",
@@ -227,7 +227,7 @@ var app = new Vue({
             country: "ESPAÑA",
             group: "E",
             flag: "images/flags/4x3/es.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:18,
             country: "COSTA RICA",
@@ -245,7 +245,7 @@ var app = new Vue({
             country: "JAPON",
             group: "E",
             flag: "images/flags/4x3/jp.svg",
-            eliminate: false
+            eliminate: true
         },{
             id:21,
             country: "BELGICA",
@@ -317,7 +317,7 @@ var app = new Vue({
             country: "COREA DEL SUR",
             group: "H",
             flag: "images/flags/4x3/kr.svg",
-            eliminate: false
+            eliminate: true
         }]
     }
 }); 
